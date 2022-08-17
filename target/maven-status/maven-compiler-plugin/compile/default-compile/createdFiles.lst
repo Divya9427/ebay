@@ -1,0 +1,16 @@
+com\ebayk\data\user\SampleData.class
+com\ebayk\data\user\UserRepository.class
+com\ebayk\data\user\UserRating.class
+com\ebayk\data\ad\Ad.class
+com\ebayk\Application.class
+com\ebayk\data\user\User$Builder.class
+com\ebayk\UserController.class
+com\ebayk\data\ad\AdRepository.class
+com\ebayk\data\ad\Ad$1.class
+com\ebayk\data\user\User.class
+com\ebayk\data\ad\Ad$Builder.class
+com\ebayk\service\RatingAnalyzer.class
+com\ebayk\AdsController.class
+com\ebayk\data\ad\SampleData.class
+com\ebayk\data\user\User$1.class
+com\ebayk\service\RatingAnalyzer$UserNotFoundException.class
