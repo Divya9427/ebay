@@ -21,6 +21,14 @@ pipeline {
                 
             }
         }
+        stage ('Backend Service') {
+
+            steps {
+                
+                    bat 'mvn spring-boot:run'
+                
+            }
+        }
 
 
         stage ('Testing Stage') {
