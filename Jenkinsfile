@@ -1,8 +1,13 @@
 pipeline {
     agent any
-       tools { 
-        maven 'Maven 3.8.6'  
-    }
+    
+    docker {
+            image 'maven:3.8.1-adoptopenjdk-11'
+            args '-v /root/.m2:/root/.m2'
+        }
+//        tools { 
+//         maven 'Maven 3.8.6'  
+//     }
 
     stages {
         stage ('Compile') {
