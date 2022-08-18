@@ -1,6 +1,7 @@
 pipeline {
-    agent none
-    
+    agent {
+    label 'master'
+  }
 
     stages {
         stage ('Compile') {
