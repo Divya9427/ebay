@@ -5,31 +5,30 @@ pipeline {
     }
 
     stages {
-        stage ('Compile') {
+        stage ('Install') {
 
             steps {
-                withMaven(maven : 'maven_3_8_6') {
-                    bat 'mvn clean compile'
-                }
+                
+                    bat 'mvn clean install'
+                
             }
         }
-        
-    //        stage('SonarQube analysis') {
-    //   steps {
-    //        withMaven(maven : 'maven_3_5_0') {
-    //     withSonarQubeEnv('sonar') {
-    //       bat 'mvn clean package sonar:sonar'
-    //     }
-    //   }
-    // }
-    //        }
+                stage ('Compile') {
+
+            steps {
+                
+                    bat 'mvn compile'
+                
+            }
+        }
+
 
         stage ('Testing Stage') {
 
             steps {
-                withMaven(maven : 'maven_3_8_6') {
+              
                     bat 'mvn test'
-                }
+                
             }
         }
 
