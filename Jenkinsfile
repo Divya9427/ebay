@@ -8,9 +8,9 @@ pipeline {
         stage ('Compile') {
 
             steps {
-            {
+            
                     sh 'mvn clean compile'
-                }
+                
             }
         }
         
@@ -27,9 +27,9 @@ pipeline {
         stage ('Testing Stage') {
 
             steps {
-                {
+                
                     sh 'mvn test'
-                }
+                
             }
         }
 
