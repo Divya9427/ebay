@@ -52,7 +52,7 @@ pipeline {
 
             steps {
               
-                    bat 'xcopy "C:\ProgramData\Jenkins\.jenkins\workspace\Ebay_Test\target\ebayk-0.1.0.war" "C:\ProgramData\Jenkins\.jenkins\workspace\Ebay_Test"'
+                   bat ' \'xcopy "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Ebay_Test\\target\\ebayk-0.1.0.war" "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Ebay_Test"\''
                 
             }
         }
