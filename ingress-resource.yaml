@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-adsingle
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /adsingle
+        backend:
+          serviceName: adsingle-service
+          servicePort: 8080
+      - path: /ratedUsers
+        backend:
+          serviceName: rateduser-service
+          servicePort: 8080 
